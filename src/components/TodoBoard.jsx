@@ -16,7 +16,6 @@ function TodoBoard({todoList , settodoList}){
         settodoList(todoList.filter((todo)=> todo.id !== id));
     }
     return(
-        <>
         <div className="workWrapper">
         <div className='workTodo'>
             <h3>해야 할 일</h3>
@@ -32,7 +31,7 @@ function TodoBoard({todoList , settodoList}){
                 ))}
             </div>
         </div>
-        <div className='worKDone'>
+        <div className='workDone'>
             <h3>해낸 일</h3>
             <div>
                 {todoList
@@ -47,7 +46,6 @@ function TodoBoard({todoList , settodoList}){
             </div>
             </div>
         </div>
-        </>
     )
 }
 

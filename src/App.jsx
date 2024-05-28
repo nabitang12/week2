@@ -62,7 +62,6 @@ function App() {
       setData('');
   };
   return (
-    <>
     <div className='back'>
     <div className='title'>UMC Study Plan</div>
     <input 
@@ -74,7 +73,6 @@ function App() {
     onKeyDown={handleEnter}/>
       <TodoBoard todoList={todoList} settodoList={settodoList}/>
     </div>
-    </>
   )
 }
 
